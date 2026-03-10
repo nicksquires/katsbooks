@@ -15,6 +15,7 @@ const Button = ({ children, color }: Props) => {
 
   // Base stylings for all Button components
   const baseStyles = `
+    flex items-center justify-center gap-2
     text-white mt-4 w-fit px-8 py-3 
     opacity-85 text-2xl rounded-full shadow-lg 
     transition-all duration-210 ease-in-out cursor-pointer 

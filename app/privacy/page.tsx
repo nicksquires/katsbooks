@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
   };
 
   return (
-    <div className="bg-stone-50 p-10 flex flex-col items-center text-center">
+    <div className="bg-stone-50 py-5 lg:py-10 px-10 lg:px-50 flex flex-col items-center text-left">
       <h1 className="text-4xl font-bold mb-2 text-stone-800/90">
         Privacy Policy
       </h1>
@@ -125,11 +125,12 @@ const PrivacyPolicy = () => {
           </p>
         </div>
 
-        <div className="bg-stone-800/90 p-6 rounded-xl border border-stone-100/90 text-center">
-          <h3 className="font-bold text-lg mb-2 text-slate-100/90">
-            Contact Us
-          </h3>
-          <p>
+        <div
+          className="bg-zinc-200 p-6 rounded-md border border-stone-50 
+                text-center text-stone-800/90"
+        >
+          <h3 className="font-bold text-2xl mb-2">Contact Us</h3>
+          <p className="p-5">
             If you have questions regarding your data, please contact{" "}
             <a href="mailto:kat.cutler.ryan@gmail.com">
               <strong>Kathryn Ryan</strong>

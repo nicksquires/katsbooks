@@ -43,8 +43,7 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center w-full">
         <TestimonialCarousel />
         <Button color="green">
-          <FaPencilAlt />
-          Write Review
+          <FaPencilAlt /> Write Review
         </Button>
       </div>
     </div>
