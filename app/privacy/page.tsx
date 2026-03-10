@@ -1,13 +1,31 @@
+"use client";
+
+import React, { useState } from "react";
+
+const [isRevealed, setIsRevealed] = useState(false); // phone number mask toggle
+const phoneNumber = "519-216-7638";
+const maskedNumber = "519-xxx-xx38";
+
+// Prevent "tel:" link from firing on first click
+const handleToggle = (e: React.MouseEvent) => {
+  if (!isRevealed) {
+    e.preventDefault();
+    setIsRevealed(true);
+  }
+};
+
 const PrivacyPolicy = () => {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-10 bg-stone-50">
-      <h1 className="text-4xl font-bold mb-2">Privacy Policy</h1>
-      <p className="text-sm text-stone-700/90 mb-6">
+    <div className="bg-stone-50 p-10 flex flex-col items-center text-center">
+      <h1 className="text-4xl font-bold mb-2 text-stone-800/90">
+        Privacy Policy
+      </h1>
+      <p className="text-sm text-stone-700/90 mb-6 italic">
         Effective Date: March 10, 2026
       </p>
       <hr className="mb-8" />
 
-      <section className="space-y-8">
+      <section className="space-y-8 text-stone-800/90">
         <div>
           <p>
             At <strong>Katsbooks</strong>, your privacy is a priority. This
@@ -28,10 +46,18 @@ const PrivacyPolicy = () => {
               ON
             </li>
             <li>
-              <strong>Phone:</strong> (519)-216-7638
+              <strong>Phone:</strong>{" "}
+              <a
+                href={isRevealed ? `tel:${phoneNumber.replace(/-/g, "")}` : "#"}
+              >
+                {isRevealed ? phoneNumber : maskedNumber}
+              </a>
             </li>
             <li>
-              <strong>Email:</strong> kat.cutler.ryan@gmail.com
+              <strong>Email:</strong>{" "}
+              <a href="mailto:kat.cutler.ryan@gmail.com">
+                kat.cutler.ryan@gmail.com
+              </a>
             </li>
           </ul>
         </div>
@@ -92,7 +118,7 @@ const PrivacyPolicy = () => {
           </p>
         </div>
 
-        <div className="bg-stone-700/85 p-6 rounded-xl border border-slate-200 text-center">
+        <div className="bg-stone-800/90 p-6 rounded-xl border border-stone-100/90 text-center">
           <h3 className="font-bold text-lg mb-2 text-slate-100/90">
             Contact Us
           </h3>
