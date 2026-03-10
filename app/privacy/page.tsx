@@ -49,6 +49,13 @@ const PrivacyPolicy = () => {
               <strong>Phone:</strong>{" "}
               <a
                 href={isRevealed ? `tel:${phoneNumber.replace(/-/g, "")}` : "#"}
+                onClick={handleToggle}
+                className={`transition-all duration-300 font-medium ${
+                  isRevealed
+                    ? "cursor-pointer link"
+                    : "cursor-help border-b border-dotted border-slate-400"
+                }`}
+                title={isRevealed ? "Call now" : "Click to reveal phone number"}
               >
                 {isRevealed ? phoneNumber : maskedNumber}
               </a>
