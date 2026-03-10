@@ -1,0 +1,11 @@
+.header {
+    background-image: URL("../../public/img/orangevilleontario.png"); 
+    text-align: center;
+    background-size:cover;
+    background-position: center;
+    height: 34rem;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    /* align-content: center;  */
+}
