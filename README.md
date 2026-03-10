@@ -1,6 +1,6 @@
 # KatsBooks
 
-A static Next.js web application for bookkeeping services information.
+An overkill static Next.js web application for bookkeeping services information.
 
 ## Live Website
 

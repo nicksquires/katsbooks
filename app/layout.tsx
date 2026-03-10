@@ -27,29 +27,28 @@ const poppins = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Katsbooks - Orangeville's Top Independent Bookkeeping Firm",
-  description:
-    "Bookeeping services based out of Orangeville, Ontario serving small to medium-sized businesses and individual clients",
-  keywords: [
-    "katsbooks",
-    "bookkeeper",
-    "orangeville",
-    "bookkeeping",
-    "accountant",
-    "taxes",
-    "accounting service",
-    "company",
-    "kathryn ryan",
-  ],
-  // Pro Tip: Add OpenGraph for better social media sharing (Facebook/LinkedIn)
-  openGraph: {
-    title: "Katsbooks - Orangeville Bookkeeping Services",
-    description: "Reliable bookkeeping for Orangeville small businesses.",
-    url: "https://www.katsbooks.ca",
-    siteName: "Katsbooks",
-    locale: "en_CA",
-    type: "website",
-  },
+  title: "Sample Vercel App",
+  description: "Description of Vercel App should go here probably!",
+  // keywords: [
+  //   "katsbooks",
+  //   "bookkeeper",
+  //   "orangeville",
+  //   "bookkeeping",
+  //   "accountant",
+  //   "taxes",
+  //   "accounting service",
+  //   "company",
+  //   "kathryn ryan",
+  // ],
+  // // Added OpenGraph for better social media sharing (Facebook/LinkedIn)
+  // openGraph: {
+  //   title: "Katsbooks - Orangeville Bookkeeping Services",
+  //   description: "Reliable bookkeeping for Orangeville small businesses.",
+  //   url: "https://www.katsbooks.ca",
+  //   siteName: "Katsbooks",
+  //   locale: "en_CA",
+  //   type: "website",
+  // },
 };
 
 export default function RootLayout({
