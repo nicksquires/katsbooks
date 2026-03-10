@@ -1,6 +1,6 @@
 const PrivacyPolicy = () => {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-10 text-stone-50">
+    <div className="max-w-4xl mx-auto px-6 py-10 bg-stone-50">
       <h1 className="text-4xl font-bold mb-2">Privacy Policy</h1>
       <p className="text-sm text-stone-700/90 mb-6">
         Effective Date: March 10, 2026
