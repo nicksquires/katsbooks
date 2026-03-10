@@ -7,13 +7,13 @@ import Button from "../components/Button";
 import { IconCard } from "../components/IconCard";
 
 const page = () => {
-  const [isRevealed, setIsRevealed] = useState(false);
+  const [isRevealed, setIsRevealed] = useState(false); // phone number mask toggle
   const phoneNumber = "519-216-7638";
   const maskedNumber = "519-xxx-xx38";
 
+  // Prevent "tel:" link from firing on first click
   const handleToggle = (e: React.MouseEvent) => {
     if (!isRevealed) {
-      // Prevent the actual "tel:" link from firing on the first click
       e.preventDefault();
       setIsRevealed(true);
     }
@@ -129,7 +129,7 @@ const page = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button color="orange">Get Directions</Button>
+              <Button color="teal">Get Directions</Button>
             </a>
           </IconCard>
 
@@ -151,27 +151,6 @@ const page = () => {
           </div>
         </div>
       </section>
-
-      {/* <div className="flex flex-col lg:flex-row items-center justify-center gap-8 w-full mt-8">
-       
-        <div className="w-full md:flex-1 max-w-150">
-          Left
-        </div>
-
-        <div className="divider divider-vertical lg:divider-horizontal"></div>
-       
-        <div className="w-full md:flex-1 flex justify-center max-w-150">
-          Right
-        </div>
-      </div> */}
-
-      {/* <div className="flex-1 max-w-150">
-          <p className="text-stone-800 opacity-85 text-3xl mt-15 m-10">
-            Book a consultation with me today!
-          </p>
-  
-          <a href="mailto:kat.cutler.ryan@gmail.com"></a>
-        </div> */}
     </div>
   );
 };

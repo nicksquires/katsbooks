@@ -11,13 +11,13 @@ import { HiPhone } from "react-icons/hi";
 import { useState } from "react";
 
 const page = () => {
-  const [isRevealed, setIsRevealed] = useState(false);
+  const [isRevealed, setIsRevealed] = useState(false); // phone number mask toggle
   const phoneNumber = "519-216-7638";
   const maskedNumber = "519-xxx-xx38";
 
+  // Prevent "tel:" link from firing on first click
   const handleToggle = (e: React.MouseEvent) => {
     if (!isRevealed) {
-      // Prevent the actual "tel:" link from firing on the first click
       e.preventDefault();
       setIsRevealed(true);
     }
@@ -105,7 +105,7 @@ const page = () => {
                 .
               </p>
               <div className="flex-col flex items-center md:flex-row gap-3">
-                {/** Email button */}
+                {/* Email button */}
                 <a href="mailto:kat.cutler.ryan@gmail.com">
                   <Button color="green">
                     <AiOutlineMail />
@@ -113,7 +113,7 @@ const page = () => {
                   </Button>
                 </a>
 
-                {/** Call button uses state to hide number*/}
+                {/* Call button. Uses state to hide number */}
                 <a
                   href={
                     isRevealed ? `tel:${phoneNumber.replace(/-/g, "")}` : "#"
@@ -133,7 +133,7 @@ const page = () => {
             </div>
           </div>
         </div>
-      </div>{" "}
+      </div>
       {/* End Hero */}
       <div className="divider divider-vertical"></div>
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full mt-8">

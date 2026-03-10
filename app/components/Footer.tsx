@@ -11,9 +11,9 @@ const Footer = () => {
   const phoneNumber = "519-216-7638";
   const maskedNumber = "519-xxx-xx38";
 
+  // Prevent "tel:" link from firing on first click
   const handleToggle = (e: React.MouseEvent) => {
     if (!isRevealed) {
-      // Prevent the actual "tel:" link from firing on the first click
       e.preventDefault();
       setIsRevealed(true);
     }

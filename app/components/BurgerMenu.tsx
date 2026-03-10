@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const BurgerMenu = () => {

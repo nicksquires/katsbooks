@@ -18,6 +18,7 @@ const testimonials = [
 ];
 
 const TestimonialCarousel = () => {
+  // Effect hook changes state every 5 seconds
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
@@ -50,6 +51,7 @@ const TestimonialCarousel = () => {
         ))}
       </div>
 
+      {/* Pagination by index */}
       <div className="flex justify-center gap-2 mb-5">
         {testimonials.map((_, index) => (
           <button

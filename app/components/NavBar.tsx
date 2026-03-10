@@ -9,19 +9,6 @@ const NavBar = () => {
       <NavLink href="/services">Services</NavLink>
       <NavLink href="/about">About</NavLink>
       <NavLink href="/contact">Contact</NavLink>
-
-      {/* <a role="tab" className="tab text-3xl">
-        HOME
-      </a>
-      <a role="tab" className="tab tab-active text-3xl">
-        PRICING
-      </a>
-      <a role="tab" className="tab text-3xl">
-        ABOUT
-      </a>
-      <a role="tab" className="tab text-3xl">
-        CONTACT
-      </a> */}
     </div>
   );
 };

@@ -1,11 +1,9 @@
-import React from "react";
-
 const PrivacyPolicy = () => {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-10 text-slate-700">
+    <div className="max-w-4xl mx-auto px-6 py-10 text-stone-50">
       <h1 className="text-4xl font-bold mb-2">Privacy Policy</h1>
-      <p className="text-sm text-slate-500 mb-6">
-        Effective Date: February 5, 2026
+      <p className="text-sm text-stone-700/90 mb-6">
+        Effective Date: March 10, 2026
       </p>
       <hr className="mb-8" />
 
@@ -43,7 +41,7 @@ const PrivacyPolicy = () => {
             2. Information Collection
           </h2>
           <p className="mb-2">
-            We collect information provided voluntarily by you (Name, Email,
+            We may collect information provided voluntarily by you (Name, Email,
             Phone, and financial details for inquiries) and non-personal
             technical data (IP address, browser type) collected via cookies for
             site analytics.
@@ -94,11 +92,16 @@ const PrivacyPolicy = () => {
           </p>
         </div>
 
-        <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center">
-          <h3 className="font-bold text-lg mb-2 text-slate-900">Contact Us</h3>
+        <div className="bg-stone-700/85 p-6 rounded-xl border border-slate-200 text-center">
+          <h3 className="font-bold text-lg mb-2 text-slate-100/90">
+            Contact Us
+          </h3>
           <p>
             If you have questions regarding your data, please contact{" "}
-            <strong>Kathryn Ryan</strong> at the address or email listed above.
+            <a href="mailto:kat.cutler.ryan@gmail.com">
+              <strong>Kathryn Ryan</strong>
+            </a>{" "}
+            at the address or email listed above.
           </p>
         </div>
       </section>

@@ -1,6 +1,5 @@
 import { HiCheckCircle } from "react-icons/hi";
 
-// Defining the shape of our data for TypeScript
 interface Service {
   id: number;
   name: string;

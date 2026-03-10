@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ReactNode } from "react";
-import { usePathname } from "next/navigation"; // <--- Use 'navigation', NOT 'router'
+import { usePathname } from "next/navigation";
 
 interface NavLinkProps {
   href: string;
@@ -10,14 +10,15 @@ interface NavLinkProps {
 }
 
 export function NavLink({ href, children }: NavLinkProps) {
-  const pathname = usePathname(); // This "grabs" the current URL
+  const pathname = usePathname(); // grab the current URL
 
-  // Normalization of pathname for handling with WHC: Remove trailing slashes for the comparison
+  // Normalization of pathname for handling with WHC: (demo: Remove trailing slashes for the comparison)
   const normalize = (path: string) =>
     path === "/" ? path : path.replace(/\/$/, "");
 
   const isActive = normalize(pathname) === normalize(href);
-  //   const isActive = pathname === href; // old way before WHC
+  // old way before WHC adjustment (for reference):
+  // const isActive = pathname === href;
 
   return (
     <Link

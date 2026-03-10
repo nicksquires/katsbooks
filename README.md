@@ -16,3 +16,10 @@ https://katsbooks.vercel.app
 - TypeScript
 - Tailwind
 - DaisyUI
+
+## Installation
+
+git clone https://github.com/nicholassquires/katsbooks
+
+npm install
+npm run dev

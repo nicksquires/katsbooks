@@ -6,8 +6,8 @@ import BurgerMenu from "./BurgerMenu";
 const SocialBar = () => {
   return (
     <>
-      {/* Social Icons Overlay */}
       <BurgerMenu />
+      {/* Social Icons Overlay */}
       <div className="absolute top-4 right-4 z-10 flex gap-4">
         <a
           href="https://www.facebook.com/Kats-Books-107436844072493"
