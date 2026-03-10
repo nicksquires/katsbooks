@@ -2,19 +2,19 @@
 
 import React, { useState } from "react";
 
-const [isRevealed, setIsRevealed] = useState(false); // phone number mask toggle
-const phoneNumber = "519-216-7638";
-const maskedNumber = "519-xxx-xx38";
-
-// Prevent "tel:" link from firing on first click
-const handleToggle = (e: React.MouseEvent) => {
-  if (!isRevealed) {
-    e.preventDefault();
-    setIsRevealed(true);
-  }
-};
-
 const PrivacyPolicy = () => {
+  const [isRevealed, setIsRevealed] = useState(false); // phone number mask toggle
+  const phoneNumber = "519-216-7638";
+  const maskedNumber = "519-xxx-xx38";
+
+  // Prevent "tel:" link from firing on first click
+  const handleToggle = (e: React.MouseEvent) => {
+    if (!isRevealed) {
+      e.preventDefault();
+      setIsRevealed(true);
+    }
+  };
+
   return (
     <div className="bg-stone-50 p-10 flex flex-col items-center text-center">
       <h1 className="text-4xl font-bold mb-2 text-stone-800/90">
