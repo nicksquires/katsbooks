@@ -23,7 +23,7 @@ https://katsbooks.vercel.app
 
 ## Installation
 ```bash
-git clone https://github.com/nicholassquires/katsbooks
+git clone https://github.com/nicksquires/katsbooks
 npm install
 npm run dev
 ```
