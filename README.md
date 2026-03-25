@@ -1,6 +1,6 @@
-# KatsBooks
+# Katsbooks
 
-An overkill static Next.js web application for bookkeeping services information. Initially designed using pure HTML/CSS/Javascript, adapted to Next.js for cleaner, more professional presentation (and to practice Next.js app deployment over different platforms)
+A static Next.js web application for Katsbooks - an independent bookkeeping firm. Initially designed using pure HTML/CSS/Javascript, adapted to Next.js for cleaner, more professional presentation (and to practice Next.js app deployment over different platforms)
 
 ## Live Website (Web Hosting Canada Deployment)
 
