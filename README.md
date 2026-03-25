@@ -24,6 +24,7 @@ https://katsbooks.vercel.app
 ## Installation
 
 git clone https://github.com/nicholassquires/katsbooks
-
+```bash
 npm install
 npm run dev
+```
