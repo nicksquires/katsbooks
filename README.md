@@ -10,6 +10,11 @@ https://katsbooks.ca
 
 https://katsbooks.vercel.app
 
+## 📸 Screenshots
+![Home page Screenshot](screenshots/home.png)
+![Contact page top Screenshot](screenshots/contact-top.png)
+![Contact page bottom Screenshot](screenshots/contact-bottom.png)
+
 ## Tech Stack
 
 - Next.js
