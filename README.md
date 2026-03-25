@@ -22,9 +22,8 @@ https://katsbooks.vercel.app
 - Tailwind/DaisyUI
 
 ## Installation
-
-git clone https://github.com/nicholassquires/katsbooks
 ```bash
+git clone https://github.com/nicholassquires/katsbooks
 npm install
 npm run dev
 ```
