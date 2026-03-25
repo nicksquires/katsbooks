@@ -2,11 +2,11 @@
 
 An overkill static Next.js web application for bookkeeping services information.
 
-## Live Website
+## Live Website (Web Hosting Canada Deployment)
 
 https://katsbooks.ca
 
-## Live Demo
+## Live Demo (Vercel Deployment)
 
 https://katsbooks.vercel.app
 
@@ -14,8 +14,7 @@ https://katsbooks.vercel.app
 
 - Next.js
 - TypeScript
-- Tailwind
-- DaisyUI
+- Tailwind/DaisyUI
 
 ## Installation
 
